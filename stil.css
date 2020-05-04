@@ -1,0 +1,68 @@
+.baslik
+{
+    width: 50%;
+    background-color: black;
+    padding: 3%;
+    top: 15%;
+    left: 25%;
+    position: absolute;
+    text-align: center;
+    color: red;
+}
+.loginKutusu
+{
+    width: 60%;
+    background-color: #191919;
+    padding: 5%;
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    text-align: center;
+}
+
+.loginKutusu input[type = "email"],.loginKutusu input[type = "password"]
+{
+  
+    background: none;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #3498db;
+    padding: 10px;
+    color: white;
+    border-radius: 24px;
+    display: block;
+    outline: none;
+    transition: 0.5s;
+    width: 40%;
+}
+
+.loginKutusu h1
+{
+    color: white;
+}
+
+.loginKutusu input[type = "email"]:focus,.loginKutusu input[type = "password"]:focus
+{
+    width: 65%;
+    border-color: #2ecc71;
+}
+
+.loginKutusu input[type = "submit"]
+{
+    background: none;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #2ecc71;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 24px;
+    display: block;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.loginKutusu input[type = "submit"]:hover
+{
+    background: #2ecc71;
+}
