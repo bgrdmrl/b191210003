@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stil.css">
+
+    <title>İletişim</title>
+
+  </head>
+
+  <body class="bg-dark">
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <a class="navbar-brand" style="font-style: italic; font-size: xx-large;" href="">İletişim</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" style="color: black;" href="Hakkında.html">Hakkında</a>
+          <a class="nav-item nav-link" style="color: black;" href="Özgeçmiş.html">Özgeçmiş</a>
+          <a class="nav-item nav-link" style="color: black;" href="Şehrim.html">Şehrim</a>
+          <a class="nav-item nav-link" style="color: black;" href="Mirasımız.html">Mirasımız</a>
+          <a class="nav-item nav-link" style="color: black;" href="Login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+  
+    <br><br>
+
+    <script>
+      function kontrol()
+      {
+        var ad = document.forms["form"]["ad"].value;
+        var soyad = document.forms["form"]["soyad"].value;
+        var email = document.forms["form"]["email"].value;
+        var sifre = document.forms["form"]["sifre"].value;
+        var cinsiyet = document.forms["form"]["cinsiyet"].value;
+        var dogumTarihi = document.forms["form"]["dogumTarihi"].value;
+        var yas = document.forms["form"]["yas"].value;
+        var mesaj = document.forms["form"]["mesaj"].value;
+
+        if (ad == "")
+        {
+          alert("Ad Kısmı Boş Geçilemez");
+          return false;
+        }
+
+        if (soyad == "")
+        {
+          alert("Soyad Kısmı Boş Geçilemez");
+          return false;
+        }
+
+        if (email == "")
+        {
+          alert("e-mail Kısmı Boş Geçilemez");
+          return false;
+        }
+
+        if (sifre == "")
+        {
+          alert("Şifre Kısmı Boş Geçilemez");
+          return false;
+        }
+
+        if (yas == "")
+        {
+          alert("Yaş Kısmı Boş Geçilemez");
+          return false;
+        }
+
+        if (dogumTarihi == "")
+        {
+          alert("Doğum Tarihi Kısmı Boş Geçilemez");
+          return false;
+        }
+
+        if (cinsiyet == "")
+        {
+          alert("Cinsiyet Kısmı Boş Geçilemez");
+          return false;
+        }
+
+        if (mesaj == "")
+        {
+          alert("Mesaj Kısmı Boş Geçilemez");
+          return false;
+        }
+
+      }
+    </script>
+
+
+      <form class="iletisimKutusu" name="form" action="İletişim.php" method="POST" onsubmit="return kontrol()">
+      <h1>İLETİŞİM</h1>
+      <input autocomplete="off" type="text" name="ad" placeholder="Ad">
+      <input autocomplete="off" type="text" name="soyad" placeholder="Soyad">
+      <input autocomplete="off" type="email" name="email" placeholder="e-mail">
+      <input type="password" name="sifre" placeholder="Şifre">
+      <span>Yaşınız = </span>
+      <input type="number" name="yas"><br><br>
+      <span>Doğum Tarihiniz = </span>
+      <input type="date" name="dogumTarihi"><br><br>
+      <span>Cinsiyetinizi belirtin = </span>
+      <label>
+        <input type="radio" name="cinsiyet" value="erkek">Erkek
+      </label>
+      <label>
+        <input type="radio" name="cinsiyet" value="kadin">Kadın
+      </label><br>
+      <span>Mesajınız = </span><br>
+      <textarea name="mesaj" cols="30" rows="2"></textarea>
+      <input type="submit" name="gonder" value="Gönder">
+      <input type="reset" name="sıfırla" value="Sıfırla">
+    </form>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+    </html>
