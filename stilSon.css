@@ -1,0 +1,145 @@
+.baslik
+{
+    width: 50%;
+    background-color: black;
+    padding: 3%;
+    top: 15%;
+    left: 25%;
+    position: absolute;
+    text-align: center;
+    color: red;
+}
+
+.loginKutusu
+{
+    width: 60%;
+    background-color: #191919;
+    padding: 5%;
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    text-align: center;
+}
+
+.loginKutusu input[type = "email"],.loginKutusu input[type = "password"]
+{
+  
+    background: none;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #3498db;
+    padding: 10px;
+    color: white;
+    border-radius: 24px;
+    display: block;
+    outline: none;
+    transition: 0.5s;
+    width: 40%;
+}
+
+.loginKutusu h1
+{
+    color: white;
+    border-bottom: 6px solid #2ecc71;
+    padding: 13px;
+}
+
+.loginKutusu input[type = "email"]:focus,.loginKutusu input[type = "password"]:focus
+{
+    width: 65%;
+    border-color: #2ecc12;
+}
+
+.loginKutusu input[type = "submit"]
+{
+    background: none;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #2ecc71;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 24px;
+    display: block;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.loginKutusu input[type = "submit"]:hover
+{
+    background: #2ecc71;
+}
+
+@media only screen and (max-width:576px)
+{
+    .loginKutusu
+    {
+        top: 40%;
+    }
+}
+
+.iletisimKutusu
+{
+    width: 60%;
+    height: 110%;
+    background-color: #7f8fa6;
+    padding: 5%;
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    text-align: center;
+}
+
+.iletisimKutusu input[type = "text"],.iletisimKutusu input[type = "password"],.iletisimKutusu input[type = "email"]
+{
+  
+    background: none;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #3498db;
+    padding: 10px;
+    color: white;
+    border-radius: 24px;
+    display: block;
+    outline: none;
+    transition: 0.5s;
+    width: 40%;
+}
+
+.iletisimKutusu h1
+{
+    color: black;
+    border-bottom: 6px solid black;
+    padding: 1px;
+}
+
+.iletisimKutusu input[type = "text"]:focus,.iletisimKutusu input[type = "password"]:focus,.iletisimKutusu input[type = "email"]:focus
+{
+    width: 65%;
+    border-color: black;
+}
+
+.iletisimKutusu input[type = "submit"],.iletisimKutusu input[type = "reset"]
+{
+    background: none;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #2ecc71;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 24px;
+    display: block;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.iletisimKutusu input[type = "submit"]:hover,.iletisimKutusu input[type = "reset"]:hover
+{
+    background: #2ecc71;
+}
+
+.iletisimKutusu input[type = "radio"]
+{
+    font-size: large;
+}
